@@ -199,11 +199,3 @@ def reboot_droplet(droplet_id):
     result = send_request(request, '{"type":"reboot"}')
     return result
 
-print(get_droplets()[0][0]['id'])
-print(reboot_droplet(7963175))
-#create_droplet('test', 'nyc3', '512mb', 'ubuntu-14-04-x64', [625940], Null, Null)
-
-#keys, num_keys = get_keys()
-
-#print(json.dumps(keys, indent=4))
-#print(num_keys)
